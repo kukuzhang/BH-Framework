@@ -17,3 +17,5 @@ $ponder==new \BH\ponder();
 
 //4 调用runner 将需求指令数据输出
 $runner==new \BH\runner();
+
+$builder->test2()->test1();

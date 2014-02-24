@@ -28,4 +28,13 @@ class builder {
              E('builder');
 
    }
+    function test1()
+    {
+        E('test1');
+    }
+
+    function test2()
+    {
+        E('test1');
+    }
 } 
