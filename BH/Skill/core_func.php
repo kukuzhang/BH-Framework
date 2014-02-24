@@ -13,3 +13,19 @@ function E($v){
     echo "<br />";
     }
 }
+
+
+/// 自动加载class N('Demo1.Name1');
+function  __autoload($className){
+    list($namespaces, $class) = explode('\\', $className);
+    require "./{$namespaces}/{$class}.php";
+}
+
+
+function N($className){
+    $className = str_replace('.', '\\', $className);
+    return new $className;
+}
+
+
+
